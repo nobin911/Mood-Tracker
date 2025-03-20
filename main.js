@@ -45,13 +45,6 @@ function displayCalendar() {
   const year = today.getFullYear();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  //Showing Today's Date to the Calendar
-  let currentDate = document.getElementById("currentDate");
-  let todaysDate = `${today.getDate()}-${month + 1}-${year}`;
-  const dateEl = document.createElement("span");
-  dateEl.innerText = `Today's Date: ${todaysDate}`;
-  currentDate.appendChild(dateEl);
-
   //Generating Dates in the Calender
 
   for (let day = 1; day <= daysInMonth; day++) {
@@ -82,6 +75,19 @@ function displayCalendar() {
     calendar.appendChild(dayEl);
   }
 }
+
+//display date in Calendar
+
+//Showing Today's Date to the Calendar
+const today = new Date();
+const month = today.getMonth();
+const year = today.getFullYear();
+
+let currentDate = document.getElementById("currentDate");
+let todaysDate = `${today.getDate()}-${month + 1}-${year}`;
+const dateEl = document.createElement("span");
+dateEl.innerText = `Today's Date: ${todaysDate}`;
+currentDate.appendChild(dateEl);
 
 // Initialize on Page Load
 window.onload = () => {
