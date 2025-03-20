@@ -1,0 +1,44 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="moodContainer">
+        <h1>Daily Mood Tracker</h1>
+
+        <!-- Mood Input Section -->
+        <div class="mood-input">
+          <label for="mood">Select your mood for today:</label><br />
+          <select id="mood">
+            <option value="Happy😊">Happy 😊</option>
+            <option value="Sad😔">Sad 😔</option>
+            <option value="Neutral😐">Neutral 😐</option>
+            <option value="Excited🤩">Excited 🤩</option>
+            <option value="Angry😠">Angry 😠</option>
+          </select>
+          <button id="saveMood">Save Mood</button>
+        </div>
+
+        <!-- Timeline Section -->
+      </div>
+      <div class="mood-timeline">
+        <h1>Mood Timeline</h1>
+        <div id="timeline"></div>
+      </div>
+    </div>
+
+    <div class="mood-calendar">
+      <h2>Calendar View</h2>
+      <p id="currentDate"></p>
+      <div id="calendar"></div>
+    </div>
+  </body>
+</html>

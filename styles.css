@@ -1,0 +1,97 @@
+/**
+ * styles.css
+ *
+ * @format
+ */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #01010f;
+}
+
+.app {
+  width: 65%;
+  padding: 45px 20px;
+  background-color: #1d0942;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.mood-input,
+.mood-timeline,
+.mood-calendar {
+  margin: 20px 0;
+}
+
+.mood-input {
+  text-align: center;
+  color: #fff;
+}
+
+select,
+button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#timeline,
+#calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mood-entry {
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e7e7e7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#currentDate {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.425);
+  border-radius: 4px;
+  width: 200px;
+  margin: 5px auto;
+  padding: 2px 4px;
+}
+.calendar-day {
+  font-size: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e7e7e7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mood-calendar {
+  width: 25%;
+  padding: 15px;
+  background-color: #ca7e0ca4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: fixed;
+  right: 1%;
+  top: 3%;
+}
